@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 04</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <div class="row">
+        <!-- <h2>Task 5: Arrays & Dynamic HTML</h2> -->
+        <h3>Please enter 6 Numbers between 1 and 99 inclusive:</h3>
+        <form action="#">
+            <div class="item" maxlength="2">
+                <input type="text" maxlength="2" autofocus id="input_01">
+                <label for="input_01">1</label>
+            </div>
+            <div class="item">
+                <input type="text"  maxlength="2" id="input_02">
+                <label for="input_02">2</label>
+            </div>
+            <div class="item">
+                <input type="text" maxlength="2" id="input_03">
+                <label for="input_03">3</label>
+            </div>
+            <div class="item">
+                <input type="text" maxlength="2" id="input_04">
+                <label for="input_04">4</label>
+            </div>
+            <div class="item">
+                <input type="text" maxlength="2" id="input_05">
+                <label for="input_05">5</label>
+            </div>
+            <div class="item">
+                <input type="text" maxlength="2" id="input_06">
+                <label for="input_06">6</label>
+            </div>
+            <center>
+                <input type="submit" value="Start" id="start" onclick="validate();">
+            </center>
+        </form>
+        <!-- resultant table -->
+        <div class="summary" id="summary">
+            <h3>Quantitative Summary</h3>
+            <table id="quantitative_table" align="center" width="50%">
+                <tr>
+                    <th>Number of Values</th>
+                    <td id="no_of_values"></td>
+                </tr>
+                <tr>
+                    <th>Sum of Values</th>
+                    <td id="sum"></td>
+                </tr>
+                <tr>
+                    <th>Average of Values</th>
+                    <td id="average"></td>
+                </tr>
+                <tr>
+                    <th>Range of values</th>
+                    <td id="range"></td>
+                </tr>
+                <tr>
+                    <th>Lowest value</th>
+                    <td id="lowest"> </td>
+                </tr>
+                <tr>
+                    <th>Highest value</th>
+                    <td id="highest"></td>
+                </tr>
+                <tr>
+                    <th>Median value</th>
+                    <td id="median"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="error" id="error">
+            <h3>&lt;&lt; BAD INPUT &gt;&gt;</h3>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
